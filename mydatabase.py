@@ -30,7 +30,7 @@ def combine_path(filepath: str) -> list[tuple[str, str, str, str]]:
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    passwd="readinghorsecrackspizza",
+    passwd="YOUR PASSWORD",
     database="pokemondb"
 )
 
