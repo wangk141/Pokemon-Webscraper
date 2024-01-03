@@ -43,7 +43,7 @@ def steal_data(url_input: str, set_name: str) -> None:
             print("value omitted")
     if len(name) > 0:
         dictt = pd.DataFrame({'name': name, 'PSA_9': PSA_9, 'PSA_10': PSA_10, 'set_name': set_n})
-        dictt.to_csv("C:/Users/KAIXI/PycharmProjects/WebScraper/csvfiles/" + url_input[46:] + ".csv", index=False)
+        dictt.to_csv("YOUR FILE LOCATION" + url_input[46:] + ".csv", index=False)
         driver.quit()
     else:
         print("set omitted: " + set_name)
@@ -136,17 +136,17 @@ for a_set in all_sets:
     except:
         print("missing set: " + a_set)
 
-myurl = 'C:/Users/KAIXI/PycharmProjects/WebScraper/csvfiles/*.csv'
+myurl = 'YOUR FILE LOCATION'
 search_raw("tcgplayer.com", combine_path(myurl))
 
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    passwd="readinghorsecrackspizza",
+    passwd="DONT STEAL MY PASSWORD",
     database="pokemondb"
 )
 
-a = combine_path('C:/Users/KAIXI/PycharmProjects/WebScraper/csvfiles/*.csv')
+a = combine_path('YOUR FILE LOCATION')
 data = search_raw("tcgplayer.com", a)
 print(data)
 query = "INSERT INTO `pokemondb`(`Name`, `PSA9`, `PSA10`, `SETNAME`, `RAW`) VALUES (%s, %s, %s, %s, %s)"
