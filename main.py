@@ -74,9 +74,10 @@ def combine_path(filepath: str) -> list[list[str, str, str, str]]:
 
 def search_raw(input_url: str, lst: list[list[str, str, str, str]]) -> list[list[str, str, str, str, str]]:
     """
-
-    :param input_url:
-    :param lst:
+    Searches for raw card prices to append to data
+    
+    input_url: url to scrape data from
+    lst: list returned by combine_path with Name, PSA 9 and PSA 10 prices along with set name
     :return:
     """
     for line in lst:
