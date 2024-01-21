@@ -6,8 +6,3 @@ Possible uses?
 1) Pokemon Card App
 2) Quick Look-up by regex matching
 3) etc.
-
-Still to do:
-1) Needs threading, its slow but it works
-2) Needs to test edge cases better
-
