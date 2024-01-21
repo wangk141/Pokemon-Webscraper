@@ -41,7 +41,7 @@ def steal_data(url_input: str, set_name: str) -> None:
             print("value omitted")
     if len(name) > 0:
         dictt = pd.DataFrame({'name': name, 'PSA_9': PSA_9, 'PSA_10': PSA_10, 'set_name': set_n})
-        dictt.to_csv("C:/Users/KAIXI/PycharmProjects/WebScraper/csvfiles/" + url_input[46:] + ".csv", index=False)
+        dictt.to_csv("FOLDER FILEPATH" + url_input[46:] + ".csv", index=False)
         driver.quit()
     else:
         print("set omitted: " + set_name)
