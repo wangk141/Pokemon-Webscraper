@@ -61,7 +61,7 @@ def initialize_db():
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="readinghorsecrackspizza",
+        passwd="YOUR DATABASE PASSWORD",
         database="pokemon"
     )
 
