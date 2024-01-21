@@ -9,7 +9,7 @@ def should_invest():
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="readinghorsecrackspizza",
+        passwd="YOUR DATABASE PASSWORD",
         database="pokemon"
     )
     mycursor = mydb.cursor()
@@ -28,7 +28,7 @@ def clean_data_set():
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="readinghorsecrackspizza",
+        passwd="YOUR DATABASE PASSWORD",
         database="pokemon"
     )
     mycursor = mydb.cursor()
