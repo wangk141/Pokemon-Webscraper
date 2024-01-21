@@ -55,7 +55,7 @@ def initialize_db():
     """
     Initialize the database and table if this is the first time accessing database
     """
-    a = combine_path('C:/Users/KAIXI/PycharmProjects/WebScraper/csvfiles/*.csv')
+    a = combine_path('FOLDER FILEPATH/*.csv')
     data = search_raw("tcgplayer.com", a)
     query = "INSERT INTO `pokemon`(`Name`, `PSA9`, `PSA10`, `SETNAME`, `RAW`) VALUES (%s, %s, %s, %s, %s)"
     mydb = mysql.connector.connect(
